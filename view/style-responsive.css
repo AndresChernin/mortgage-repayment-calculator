@@ -1,0 +1,46 @@
+@media (max-width: 690px) {
+  .whole-part{
+    height:100vw;
+    border-radius: 0;
+  }
+  .right-part{
+    border-radius: 0;
+  }
+  .title-part {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap:5px;
+  }
+  #clearLabel{
+    margin:0;
+    padding:0;
+  }
+  #id-title{
+    margin:0;
+    padding:0;
+  }
+
+  .term-rate-part {
+    flex-direction: column;
+    
+  }
+
+   .button-setup {
+    width: 100%;
+  }
+ 
+}
+
+@media (max-width: 500px) {
+  .whole-part{
+    flex-direction: column;
+    align-items: center;
+
+ }
+ .left-part,.right-part{
+    width:100%;
+    border-radius: 0;
+ }
+}
+
