@@ -1,0 +1,165 @@
+.small-red-text {
+    font-size: 8.5px;
+    font-weight: 500;
+    color: hsl(345, 92%, 48%);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.results-output {
+    background-color: hsl(202, 55%, 16%);
+    border-top: 3px solid yellow;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+    padding-top: 10px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.currency-symbol-left-blue {
+    background-color: hsl(202, 86%, 94%);
+    color: black;              /* symbol color */
+    font-weight: bold;         /* make it thicker */
+    padding: 5px 8px;          /* some spacing, like a small box */
+    border-radius: 5px;        /* rounded corners */
+    margin-right: 6px;         /* distance to the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-symbol-left-red {
+    background-color: hsl(353, 95%, 50%);
+    color: white;              /* symbol color */
+    font-weight: bold;         /* make it thicker */
+    padding: 5px 8px;          /* some spacing, like a small box */
+    border-radius: 5px;        /* rounded corners */
+    margin-right: 6px;         /* distance to the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-symbol-right-blue {
+    background-color: hsl(202, 86%, 94%);
+    color: black;              /* symbol color */
+    font-weight: medium;       /* make it thicker */
+    padding: 5px 10px;         /* some spacing, like a small box */
+    border-radius: 5px;        /* rounded corners */
+    margin-right: 0.2px;       /* distance to the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-symbol-right-red {
+    background-color: hsl(353, 95%, 50%);
+    color: white;              /* symbol color */
+    font-weight: medium;       /* make it thicker */
+    padding: 5px 10px;         /* some spacing, like a small box */
+    border-radius: 5px;        /* rounded corners */
+    margin-right: 0.2px;       /* distance to the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-borders {
+    border: 1px solid hsl(0, 95%, 51%);
+}
+
+.blue-borders {
+    border: 1px solid hsl(200, 26%, 54%);
+}
+
+.blue-borders-for-radio-button {
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px;
+    height: 28px;
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.yellow-borders-for-radio-button {
+    background-color: hsl(62, 71%, 91%);
+    border-color: hsl(61, 70%, 42%);
+    border-radius: 5px;
+    height: 28px;
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#clearLabel {
+    cursor: pointer;
+}
+
+.input-field {
+    cursor: pointer;
+}
+
+.currency-symbol-left-yellow {
+    background-color: hsl(54, 100%, 62%); /* button yellow */
+    color: hsl(202, 55%, 16%);            /* dark blue text, matching the design */
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-symbol-right-yellow {
+    background-color: hsl(54, 100%, 62%); /* button yellow */
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* yellow border when input is focused */
+.input-field:has(input:focus) {
+    border: 1px solid hsl(54, 100%, 62%);
+}
+
+/* color the symbol on the left or right when input is focused */
+.input-field:has(input:focus) .currency-symbol-left-blue,
+.input-field:has(input:focus) .currency-symbol-left-red {
+    background-color: hsl(54, 100%, 62%);
+    color: hsl(202, 55%, 16%);
+}
+
+.input-field:has(input:focus) .currency-symbol-right-blue,
+.input-field:has(input:focus) .currency-symbol-right-red {
+    background-color: hsl(54, 100%, 62%);
+    color: hsl(202, 55%, 16%);
+}
+
+.point-blue {
+    accent-color: hsl(202, 55%, 16%);
+}
+
+.point-yellow {
+    accent-color: hsl(61, 71%, 31%);
+}
+
+.brown-button {
+    background-color: #ccd51a;
+}
+
+.yellow-button {
+    background-color: hsl(61, 91%, 54%);
+}

@@ -1,0 +1,186 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: hsl(212, 45%, 89%);
+}
+
+/* min-height:100vh is often more reliable than height:100% */
+body {
+  display: flex;
+  align-items: center;       /* vertically centered (when flex-direction: row) */
+  justify-content: center;   /* horizontally centered */
+  min-height: 100vh;         /* ensures the body takes full height */
+  background-color: hsl(170, 45%, 89%);
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.whole-part {
+  height: 70vh;
+  width: 60vw;               /* use vw instead of vh for width (more common) */
+  background: white;
+  border: 1px solid #000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  display: flex;
+}
+
+.left-part, .right-part {
+  border: 1px solid white;
+  height: 100%;
+  width: 50%;
+}
+
+.left-part {
+  padding: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.right-part {
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: hsl(202, 55%, 26%);
+}
+
+.title-part, .amount-part, .term-rate-part,
+.type-part, .calculate-part {
+  border: 1px solid, black;
+  width: 80%;
+}
+
+.small-blue-text {
+  font-size: 10px;
+  font-weight: 500;
+  color: hsl(203, 41%, 72%);
+}
+
+.bold-black-text {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+#clearLabel {
+  text-decoration: underline;
+  padding-top: 0px;
+  margin: 0;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.term-rate-part {
+  display: flex;
+  gap: 10px;
+}
+
+.term-part,
+.rate-part {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  min-width: 0; /* 👈 prevents overflow */
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-right: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.no-border-input {
+  border: none;         /* no own border */
+  outline: none;        /* removes the blue focus ring */
+  font-size: 14px;
+  flex: 1;              /* fills remaining space */
+  min-width: 0;         /* prevents overflow */
+}
+
+.type-part {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: hsl(202, 55%, 16%); /* if you also want a color */
+  display: flex;             /* in case you want the two <p> elements side by side */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 7px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(203, 41%, 72%); /* the blue border */
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.calculate-part {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: hsl(202, 55%, 16%); /* if you also want a color */
+  display: flex;             /* in case you want the two <p> elements side by side */
+  align-items: flex-start;
+  justify-content: left;
+  gap: 7px;
+  height: 28px;
+  width: 80%;
+}
+
+.button-setup {
+  height: 100%;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;                 /* makes the button a flex container */
+  align-items: center;           /* vertically centered */
+  justify-content: center;       /* horizontally centered */
+  gap: 5px;                      /* space between icon and text */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;               /* pointer on hover */
+}
+
+.button-setup img {
+  width: 16px;   /* e.g. 16px */
+  height: 16px;  /* same height → remains square */
+  padding-left: 5%;
+}
