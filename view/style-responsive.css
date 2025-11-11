@@ -2,6 +2,8 @@
   .whole-part{
     height:100vw;
     border-radius: 0;
+    margin-top:0;
+    padding-top:10;
   }
   .right-part{
     border-radius: 0;
@@ -33,9 +35,16 @@
 }
 
 @media (max-width: 500px) {
+  
+  body {
+    align-items: flex-start;
+    justify-content: center;
+  }
   .whole-part{
     flex-direction: column;
     align-items: center;
+    margin-top:1%;
+    padding-top:0;
 
  }
  .left-part,.right-part{
