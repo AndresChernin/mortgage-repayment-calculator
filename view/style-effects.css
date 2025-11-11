@@ -76,6 +76,9 @@
 .blue-borders {
     border: 1px solid hsl(200, 26%, 54%);
 }
+.yellow-borders {
+    border: 1px solid hsl(54, 100%, 62%);;
+}
 
 .blue-borders-for-radio-button {
     border: 1px solid hsl(200, 26%, 54%);
@@ -131,12 +134,12 @@
 }
 
 /* yellow border when input is focused */
-.input-field:has(input:focus) {
+/*.input-field:has(input:focus) {
     border: 1px solid hsl(54, 100%, 62%);
 }
-
+*/
 /* color the symbol on the left or right when input is focused */
-.input-field:has(input:focus) .currency-symbol-left-blue,
+/*.input-field:has(input:focus) .currency-symbol-left-blue,
 .input-field:has(input:focus) .currency-symbol-left-red {
     background-color: hsl(54, 100%, 62%);
     color: hsl(202, 55%, 16%);
@@ -147,7 +150,7 @@
     background-color: hsl(54, 100%, 62%);
     color: hsl(202, 55%, 16%);
 }
-
+*/
 .point-blue {
     accent-color: hsl(202, 55%, 16%);
 }

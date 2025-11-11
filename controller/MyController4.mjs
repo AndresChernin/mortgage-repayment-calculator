@@ -23,7 +23,7 @@ export default class MyController3 {
     this.registerEvents();
     this.programmingOfRadios();
     this.programmingOfInputs();
-    
+    this.programmingOfInputs2();
   }
   registerEvents() {
     
@@ -287,6 +287,40 @@ controllRadios(){
       });
     }
   }
+  programmingOfInputs2() {
+  const inputs = document.querySelectorAll('.no-border-input');
+
+  inputs.forEach(input => {
+    input.addEventListener("focus", () => {
+      const wrapper = input.closest('.input-field'); 
+      wrapper.classList.remove("red-borders", "blue-borders");
+      wrapper.classList.add("yellow-borders");
+      const span = wrapper.querySelector('span');
+       span.classList.remove("currency-symbol-left-red", "currency-symbol-right-red",
+        "currency-symbol-left-blue", "currency-symbol-right-blue");
+      // change to yellow color
+      if (span.textContent.includes("%") || span.textContent.includes("years")) {
+        span.classList.add("currency-symbol-right-yellow");
+      } else {
+        span.classList.add("currency-symbol-left-yellow");
+      }
+    });
+
+    input.addEventListener("blur", () => {
+      const wrapper = input.closest('.input-field');
+      wrapper.classList.remove("yellow-borders");
+      wrapper.classList.add("blue-borders");
+      const span = wrapper.querySelector('span');
+       span.classList.remove("currency-symbol-left-yellow", "currency-symbol-right-yellow");
+      // back to blue standard color
+      if (span.textContent.includes("%") || span.textContent.includes("years")) {
+        span.classList.add("currency-symbol-right-blue");
+      } else {
+        span.classList.add("currency-symbol-left-blue");
+      }
+    });
+  });
+}
   makeButtonHovable(){
 
   }
