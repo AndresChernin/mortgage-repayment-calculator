@@ -73,7 +73,7 @@ body {
 
 .title-part, .amount-part, .term-rate-part,
 .type-part, .calculate-part {
-  border: 0px solid, black;
+  border: 0px solid black;
   width: 80%;
 }
 
@@ -93,12 +93,21 @@ body {
   justify-content: space-between;
 }
 
-#clearLabel {
+/*#clearLabel {
   text-decoration: underline;
   padding-top: 0px;
   margin: 0;
   margin-top: 13px;
   cursor: pointer;
+}*/
+#clearLabel {
+  background: none;
+  border: none;
+  padding: 0;
+  color: hsl(203, 41%, 72%);  /* dieselbe Farbe wie dein Text */
+  font-size: small;
+  cursor: pointer;
+  text-decoration: underline; /* optional */
 }
 
 .term-rate-part {
